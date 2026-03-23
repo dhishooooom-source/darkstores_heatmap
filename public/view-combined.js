@@ -296,7 +296,7 @@ window.CombinedView = (function () {
             maxZoom: 17,
             max: 0.08,
             minOpacity: 0.45,
-            gradient: { 0.0: '#0000ff', 0.25: '#00bfff', 0.5: '#00ff88', 0.7: '#ffdd00', 0.85: '#ff6600', 1.0: '#ff0000' },
+            gradient: { 0.0: '#87ceeb', 0.2: '#00c853', 0.45: '#aeea00', 0.65: '#ffd600', 0.82: '#ff6d00', 1.0: '#dd2c00' },
         });
         _heatLayer.addTo(_map);
     }
