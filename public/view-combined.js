@@ -291,11 +291,12 @@ window.CombinedView = (function () {
         if (!_showHeatmap) return;
         const pts = buildHeatmapPoints();
         _heatLayer = L.heatLayer(pts, {
-            radius: 28,
-            blur: 18,
+            radius: 35,
+            blur: 25,
             maxZoom: 17,
-            max: 1.0,
-            gradient: { 0.15: '#1e0a3c', 0.35: '#7c3aed', 0.55: '#db2777', 0.75: '#f59e0b', 1.0: '#ffffff' },
+            max: 0.08,
+            minOpacity: 0.45,
+            gradient: { 0.0: '#0000ff', 0.25: '#00bfff', 0.5: '#00ff88', 0.7: '#ffdd00', 0.85: '#ff6600', 1.0: '#ff0000' },
         });
         _heatLayer.addTo(_map);
     }
